@@ -5,6 +5,8 @@ namespace flex {
 
 	void Discovery::start() {
 		_active = true;
+
+		// start task to listen for discovery packets and dispatch on_radio events
 	}
 
 	void Discovery::stop() {

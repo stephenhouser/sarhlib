@@ -1,4 +1,5 @@
-
+#ifndef FLEX_GUI_CLIENT_H
+#define FLEX_GUI_CLIENT_H
 
 namespace flex {
 
@@ -9,3 +10,5 @@ namespace flex {
 	};
 
 }
+
+#endif // FLEX_GUI_CLIENT_H

@@ -1,3 +1,5 @@
+#ifndef FLEX_DISCOVERY_H
+#define FLEX_DISCOVERY_H
 
 #include <string>
 #include <vector>
@@ -17,8 +19,11 @@ namespace flex {
 
 			void add_on_radio_discovered(discovery_callback_fn handler);
 
-			bool is_active() {
-				return _active;
+			// Test routines
+			void fake_discovery(const char *name) {
+				Radio radio;
+				radio.name = name;
+				on_radio_discovered(radio);
 			}
 
 		private:
@@ -38,3 +43,5 @@ namespace flex {
 
 	};
 }
+
+#endif // FLEX_DISCOVERY_H
