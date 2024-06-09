@@ -1,6 +1,8 @@
 
 #include "socket.h"
 
-TEST_CASE("header sanity check") {
+#include <catch2/catch.hpp>
+
+TEST_CASE("csocket header sanity check") {
 	REQUIRE(true);
 }

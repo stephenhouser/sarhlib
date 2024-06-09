@@ -15,5 +15,5 @@ target_include_directories(${PROJECT_NAME}
 
 add_subdirectory(examples)
 
-#enable_testing()
-#add_subdirectory(tests)
+enable_testing()
+add_subdirectory(tests)
