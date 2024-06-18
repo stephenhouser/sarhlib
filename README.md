@@ -1,3 +1,14 @@
+# SARHlib - C/C++ Support Library
+
+A small library of code that I don't want to rewrite for each project.
+
+* C++ network sockets
+* C++ vector/range adapters
+* String utilities like `split` and such
+* C lists, queues, stacks, and arrays
+
+
+## NOTES
 
 https://stackoverflow.com/questions/53111082/how-to-install-clang-tidy-on-macos
 
