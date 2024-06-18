@@ -9,6 +9,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_compile_options(-Wall -Wextra -Wpedantic)
 
+add_subdirectory(src/sarhc)
 add_subdirectory(src/safequeue)
 add_subdirectory(src/socket)
 add_subdirectory(src/split)
@@ -16,3 +17,4 @@ add_subdirectory(src/split)
 
 enable_testing()
 add_subdirectory(tests)
+add_subdirectory(templates)
