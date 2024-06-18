@@ -1,4 +1,11 @@
 
+https://stackoverflow.com/questions/53111082/how-to-install-clang-tidy-on-macos
+
+```bash
+brew install clang-format
+```
+
+
 
 Use this one:
 Striaght old cmake

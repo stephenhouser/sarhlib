@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.25)
 
-project(flexlib-tests LANGUAGES CXX)
+#project(tests LANGUAGES CXX)
 
 add_test(
   NAME cmake-install

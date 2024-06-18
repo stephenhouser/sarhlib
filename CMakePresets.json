@@ -2,8 +2,20 @@
 	"version": 8,
 	"configurePresets": [
 		{
+			"name": "darwin-release",
+			"displayName": "Darwin Release: Clang 15.0.0 arm64-apple-darwin23.4.0",
+			"description": "Using compilers: C = /usr/bin/clang, CXX = /usr/bin/clang++",
+			"binaryDir": "${sourceDir}/build/${presetName}",
+			"cacheVariables": {
+				"CMAKE_INSTALL_PREFIX": "${sourceDir}/dist/${presetName}",
+				"CMAKE_C_COMPILER": "/usr/bin/clang",
+				"CMAKE_CXX_COMPILER": "/usr/bin/clang++",
+				"CMAKE_BUILD_TYPE": "Release"
+			}
+		},
+		{
 			"name": "darwin",
-			"displayName": "Clang 15.0.0 arm64-apple-darwin23.4.0",
+			"displayName": "Darwin Debug: Clang 15.0.0 arm64-apple-darwin23.4.0",
 			"description": "Using compilers: C = /usr/bin/clang, CXX = /usr/bin/clang++",
 			"binaryDir": "${sourceDir}/build/${presetName}",
 			"cacheVariables": {
@@ -15,7 +27,7 @@
 		},
 		{
 			"name": "x86_64-linux",
-			"displayName": "GCC 14.1.1 x86_64-pc-linux-gnu",
+			"displayName": "Linux Debug: GCC 14.1.1 x86_64-pc-linux-gnu",
 			"description": "Using compilers: C = /usr/bin/gcc, CXX = /usr/bin/g++",
 			"binaryDir": "${sourceDir}/build/${presetName}",
 			"cacheVariables": {
