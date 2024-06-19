@@ -60,7 +60,8 @@ void *queue_delete(Queue *queue) {
 
 	void *element = queue->contents[queue->front];
 
-	queue->front = ++queue->front % queue->max_elements;
+	queue->front++;
+	queue->front = queue->front % queue->max_elements;
 	queue->count--;
 	return element;
 }
